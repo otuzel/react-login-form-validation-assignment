@@ -1,0 +1,29 @@
+.form {
+  width: 250px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  &__section {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__label{
+    color: #6535b8;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  &__input{
+    font-size: 1.25rem;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  &__button{
+    background-color: #6535b8;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 5px;
+  }
+}
