@@ -23,12 +23,15 @@ class Login extends React.Component {
   }
   validateInputs = (formData) => {
     let errors = [];
+    
     for (let input in formData) {
+      formData[input] = formData[input].replace(/\s/g, '');
       errors.push(...validate(input, formData[input]).errors);
     }
     this.setState({
       errors,
-      formValid: errors.length === 0
+      formValid: errors.length === 0,
+      inputs: formData
     });
   }
   // Updates the sessionStorage and authenticates the user
@@ -41,7 +44,7 @@ class Login extends React.Component {
   render() {
     return (
       <div className="login-wrapper">
-        <LoginForm onChange={this.handleChange} onSubmit={this.onSubmit} formValid={this.state.formValid}/>
+        <LoginForm onChange={this.handleChange} onSubmit={this.onSubmit} formValid={this.state.formValid} {...this.state.inputs}/>
         <Errors errors={this.state.errors}/>
       </div>
     );

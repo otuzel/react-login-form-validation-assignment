@@ -81,12 +81,12 @@ export function validate(input, value) {
       errors.push(rules.warnings['max-length']);
     }
   } else if (input === 'username' && rules) {
-      if (!rules.isMinLengthOK(value)) {
-        errors.push(rules.warnings['min-length']);
-      }
-      if (!rules.isMaxLengthOK(value)) {
-        errors.push(rules.warnings['max-length']);
-      }
+    if (!rules.isMinLengthOK(value)) {
+      errors.push(rules.warnings['min-length']);
+    }
+    if (!rules.isMaxLengthOK(value)) {
+      errors.push(rules.warnings['max-length']);
+    }
   }
   
   return {
