@@ -1,10 +1,9 @@
 
-A React assignment for login form validation using sessionStorage.
+A React assignment on form validation and sessionStorage authorization.
 
 Validation rules:
 
 - Username can\'t be shorter than 3 characters.
-
 - Username can\'t exceed 16 characters.
 - Password should include one consecutive three letters. (ex. "abc", "def", etc.)
 - Password should not include i, O, I letters.
@@ -12,6 +11,7 @@ Validation rules:
 - Password can\'t be shorter than 6 characters.
 - Password can\'t be longer than 32 characters.
 - Password should be lowercase only.
+
 ## Installation
 In the project directory, run:
 ### `npm install`
