@@ -1,5 +1,4 @@
-
-A React assignment on form validation and sessionStorage authorization.
+## A React assignment on form validation and sessionStorage authorization
 
 Validation rules:
 
